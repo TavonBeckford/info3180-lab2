@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+<!-- <head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app.css') }}">
+</head> -->
+
+<section class = "wrapper">
+	<div class = "One">
+		<img id="ProfPic" src= "{{ url_for('static', filename='mike.jpg') }}" width= 100px height=100px>
+        <h2>Michael Beckford</h2>
+        <ul> 
+            <li>@mbeckford</li>
+            <li>Portmore, St.Catherine</li>
+            <li>Joined {{ date_joined }}</li>
+        </ul>
+	</div>
+	<div class = "Two">
+		<section class="Bio">
+            <p> A Computer Science Student who attends the University of the West Indies.</p>
+        </section>
+        <ul class="accinfo">
+            <li class="info">
+                <p class="accvalues">10</p>
+                <p class="label">Posts</p>
+            </li>
+            <li class="info">
+                <p class="accvalues">25</p>
+                <p class="label">Following</p>
+            </li>
+            <li class="info">
+                <p class="accvalues">1000</p>
+                <p class="label">Followers</p>
+            </li>
+        </ul>
+    </div>
+    <button> Follow </button>
+	</div>
+</section>
+{% endblock %}
